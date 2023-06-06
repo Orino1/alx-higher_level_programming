@@ -6,8 +6,8 @@ number = random.randint(-10000, 10000)
 def lastdegit(number):
     if number < 0:
         number = -(number)
-        return -(number%10)
-    return (number%10)
+        return -(number % 10)
+    return (number % 10)
 
 
 if lastdegit(number) == 0:
