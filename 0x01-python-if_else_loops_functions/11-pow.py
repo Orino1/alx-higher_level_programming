@@ -2,7 +2,13 @@
 
 
 def pow(a, b):
-    result = 1
-    for i in range(b):
-        result *= a
-    return result
+    if b >= 0:
+        result = 1
+        for _ in range(b):
+            result *= a
+        return result
+    else:
+        result = 1
+        for _ in range(-b):
+            result /= a
+        return result
