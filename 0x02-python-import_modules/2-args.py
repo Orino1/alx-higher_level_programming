@@ -8,8 +8,13 @@ if __name__ == "__main__":
     i = 1
     if length == 0:
         print("0 arguments.")
+    elif length == 1:
+        print("1 argument:")
+        for arg in arguments:
+            print("{}: {}".format(i, arg))
+            i = i + 1
     else:
-        print("{} argument:".format(length))
+        print("{} arguments:".format(length))
         for arg in arguments:
             print("{}: {}".format(i, arg))
             i = i + 1
