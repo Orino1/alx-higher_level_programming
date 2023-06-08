@@ -3,14 +3,13 @@
 if __name__ == "__main__":
     import sys
 
-    arguments = sys.argv
+    arguments = sys.argv[1:]
     length = len(arguments)
-    i = 0
-    if length == 1:
+    i = 1
+    if length == 0:
         print("0 arguments.")
     else:
-        print("{} argument:".format(length - 1))
+        print("{} argument:".format(length))
         for arg in arguments:
-            if i != 0:
-                print("{}: {}".format(i, arg))
+            print("{}: {}".format(i, arg))
             i = i + 1
