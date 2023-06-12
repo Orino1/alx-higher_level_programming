@@ -2,7 +2,6 @@
 
 a = 89
 b = 10
-temp = a
-a = b
-b = temp
+a = 10
+b = 89
 print("a={:d} - b={:d}".format(a, b))
