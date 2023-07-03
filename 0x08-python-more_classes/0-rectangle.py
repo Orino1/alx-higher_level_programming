@@ -1,4 +1,6 @@
 #!/usr/bin/python3
-"""this is an empty class"""
-class Rectangle:
+def __init__(self):
+    """
+    Initializes a new instance of the Rectangle class.
+    """
     pass
