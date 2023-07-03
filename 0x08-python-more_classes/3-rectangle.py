@@ -102,5 +102,6 @@ class Rectangle:
         if self.height == 0 or self.width == 0:
             return ""
         multiply_widt = ( char * self.width ) + "\n"
-        multiply_higt = multiply_widt * self.height
-        return multiply_higt
+        multiply_higt = multiply_widt * (self.height - 1)
+        rectangle_shape = multiply_higt + ( char * self.width )
+        return rectangle_shape
