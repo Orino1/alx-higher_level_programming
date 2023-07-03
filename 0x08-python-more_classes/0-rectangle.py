@@ -2,8 +2,9 @@
 """
     declaring an empty class
 """
-def __init__(self):
-    """
-    Initializes a new instance of the Rectangle class.
-    """
-    pass
+class Rectangle:
+    def __init__(self):
+        """
+        Initializes a new instance of the Rectangle class.
+        """
+        pass
