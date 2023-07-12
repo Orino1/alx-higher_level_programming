@@ -18,5 +18,3 @@ def write_file(filename="", text=""):
         my_file.write(text)
         my_file.seek(0)
         return len(my_file.read())
-
-print(write_file("cat.txt", "This School is so cool!\n"))
