@@ -14,7 +14,9 @@ def write_file(filename="", text=""):
     Returns:
         Number of chars writting to the file
     """
-    with open(filename, "w", encoding="UTF8") as my_file:
+    with open(filename, "w+", encoding="UTF8") as my_file:
         my_file.write(text)
         my_file.seek(0)
         return len(my_file.read())
+
+print(write_file("cat.txt", "This School is so cool!\n"))
