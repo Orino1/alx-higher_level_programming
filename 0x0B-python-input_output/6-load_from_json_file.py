@@ -2,7 +2,7 @@
 """
 This is a module is for creating an Object from a “JSON file”.
 """
-import json as js
+import json
 
 def load_from_json_file(filename):
     """
@@ -15,4 +15,4 @@ def load_from_json_file(filename):
         the object representation from the filename file
     """
     with open(filename, "r", encoding="UTF8") as file:
-        return js.lead(file)
+        return json.lead(file)
