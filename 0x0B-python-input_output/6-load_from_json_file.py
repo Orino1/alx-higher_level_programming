@@ -6,14 +6,13 @@ import json as js
 
 def load_from_json_file(filename):
     """
-    a function that writes an Object to a text file, using a JSON representation.
+    a function that creates an Object from a “JSON file”.
 
     Args:
-        my_obj (object) : a python object
         filename (str) : file to be writting to
 
     Returns:
-        none
+        the object representation from the filename file
     """
     with open(filename, "r", encoding="UTF8") as file:
-        return js.lead(filename, file)
+        return js.lead(file)
