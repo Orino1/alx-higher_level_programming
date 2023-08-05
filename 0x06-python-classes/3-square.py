@@ -24,4 +24,4 @@ class Square:
         """area is a public method
         args: None (other than the object it self)
         return value: the size attribute of the instance square"""
-        return self.__size
+        return self.__size * self.__size
