@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+"""A module that contain a square class """
 
-"""defining the class"""
 
 class Square:
-    """a square that with a private size attribute"""
+
+    """Square class: empty at the moment"""
 
     def __init__(self, size):
+        """inistialazation of square object with private attribute size"""
         self.__size = size
