@@ -11,7 +11,7 @@ class Square:
         size, while checking if size is int/and if greater than 0,and raising
         errors accordinlly"""
         if isinstance(size, int):
-            if size > 0:
+            if size < 0:
                 raise ValueError("size must be >= 0")
             else:
                 self.__size = size
