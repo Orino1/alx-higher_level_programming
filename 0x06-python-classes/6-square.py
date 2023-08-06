@@ -67,8 +67,9 @@ class Square:
         """"position here is a methode that act as a setter for the property
         position"""
         if isinstance(value, tuple):
-            if (len(value) == 2 and isinstance(value[0], int)
-                    and isinstance(value[1], int)):
+            if (len(value) == 2
+                    and (isinstance(value[0], int) and value[0] >= 0)
+                    and (isinstance(value[1], int) and value[1] >= 0)):
                 self.__position = value
             else:
                 raise TypeError(
