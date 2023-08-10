@@ -64,12 +64,3 @@ class Rectangle():
                 self.__height = value
         else:
             raise TypeError("height must be an integer")
-
-
-
-my_rectangle = Rectangle(2, 4)
-print(my_rectangle.__dict__)
-
-my_rectangle.width = 10
-my_rectangle.height = 3
-print(my_rectangle.__dict__)
