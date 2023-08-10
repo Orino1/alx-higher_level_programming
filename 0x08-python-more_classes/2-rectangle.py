@@ -66,13 +66,13 @@ class Rectangle():
             raise TypeError("height must be an integer")
 
     """
-    Returns the rectangle area
+    Returns the rectangle area.
     """
     def area(self):
         return self.width * self.width
 
     """
-    Returns the rectangle perimeter
+    Returns the rectangle perimeter.
     """
     def perimeter(self):
         if self.width == 0 or self.height == 0:
