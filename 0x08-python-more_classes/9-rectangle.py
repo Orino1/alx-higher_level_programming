@@ -146,7 +146,6 @@ class Rectangle():
         cls: class literal
         size: represent the width and height
     """
-    @staticmethod
+    @classmethod
     def square(cls, size=0):
-        new_instance = cls(size, size)
-        return new_instance
+        return cls(size, size)
