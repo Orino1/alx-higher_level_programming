@@ -1,2 +1,0 @@
--- a script
-SHOW DATABASES;
