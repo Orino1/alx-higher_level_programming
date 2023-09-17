@@ -16,4 +16,4 @@ if __name__ == "__main__":
     ses = Session()
     state_to_edit = ses.query(State).filter(State.id == 2).first()
     state_to_edit.name = "New Mexico"
-    ses.commite()
+    ses.commit()
