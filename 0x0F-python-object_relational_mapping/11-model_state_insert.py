@@ -17,5 +17,5 @@ if __name__ == "__main__":
     new_state = State(name="Louisiana")
     ses.add(new_state)
     ses.commit()
-    state = ses.query(State).filter(State.name == "Louisiana")
+    state = ses.query(State).filter(State.name == "Louisiana").first()
     print(state.id)
