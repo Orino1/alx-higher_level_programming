@@ -17,6 +17,5 @@ if __name__ == "__main__":
     new_state = State(name="Louisiana")
     ses.add(new_state)
     ses.commit()
-    states = ses.query(State).all()
-    for state in states:
-        print(f"{state.id}: {state.name}")
+    state = ses.query(State).filter(State.name == "Louisiana")
+    print(state.id)
