@@ -18,7 +18,7 @@ if __name__ == "__main__":
     try:
         recived_data = response.json()
         if len(recived_data) > 0:
-            print(f"[{recived_data['id']}] {recived_data['name']}")
+            print(f"[{recived_data.get('id')}] {recived_data.get('name')}")
         else:
             print("No result")
     except:
