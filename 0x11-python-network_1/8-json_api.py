@@ -12,7 +12,7 @@ if __name__ == "__main__":
     data = {
         'q': ""
     }
-    if sys.argv[1] is not None:
+    if len(sys.argv) > 1:
         data['q'] = sys.argv[1]
     response = requests.post(url, data=data)
     try:
