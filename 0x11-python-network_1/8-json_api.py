@@ -14,7 +14,7 @@ if __name__ == "__main__":
     }
     if sys.argv[1] is not None:
         data['q'] = sys.argv[1]
-    response = requests.post(url)
+    response = requests.post(url, data=data)
     try:
         recived_data = response.json()
         if len(recived_data) > 0:
