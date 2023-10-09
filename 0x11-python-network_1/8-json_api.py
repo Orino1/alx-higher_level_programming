@@ -1,17 +1,24 @@
 #!/usr/bin/python3
-"""script that takes in a letter and sends a POST request to
-http://0.0.0.0:5000/search_user with the letter as a parameter."""
+"""
+takes in a letter and sends a POST request
+to http://0.0.0.0:5000/search_user with the
+letter as a parameter.
+"""
 import requests
-from sys import argv
+import sys
 
 if __name__ == "__main__":
-    data = {"q": argv[1] if len(argv) > 1 else ""}
-    request = requests.post(
-            "http://0.0.0.0:5000/search_user", data=data)
+    url = "http://0.0.0.0:5000/search_user"
+    data = {
+        'q': ""
+    }
+    if sys.argv[1] is not None:
+        data['q'] = sys.argv[1]
+    response = requests.post(url)
     try:
-        json = request.json()
-        if json:
-            print("[{}] {}".format(json.get("id"), json.get("name")))
+        recived_data = response.json()
+        if len(recived_data) > 0:
+            print(f"[{recived_data['id']}] {recived_data['name']}")
         else:
             print("No result")
     except:
